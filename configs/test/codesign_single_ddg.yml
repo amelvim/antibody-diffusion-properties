@@ -1,0 +1,29 @@
+mode: single_cdr_ddg
+model:
+  checkpoint: ./trained_models/codesign_single.pt
+
+sampling:
+  seed: 2022
+  sample_structure: true
+  sample_sequence: true
+  sample_step_by_ddg: true
+  sample_step_by_hydro: false
+  sample_step_mode: "min"
+  sample_step_num: 20
+  sample_step_period: 1
+  cdrs:
+    - H_CDR1
+    - H_CDR2
+    - H_CDR3
+    - L_CDR1
+    - L_CDR2
+    - L_CDR3
+  num_samples: 100
+
+dataset:
+  test:
+    type: sabdab
+    summary_path: ./data/sabdab_summary_all.tsv
+    chothia_dir: ./data/all_structures/chothia
+    processed_dir: ./data/processed
+    split: test
