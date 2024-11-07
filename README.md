@@ -94,6 +94,16 @@ For training details and more design options, such as "Fix-backbone Design", "An
 If you find this repository useful in your research, please cite the following works.
 
 ```bibtex
+@article{villegas2024guiding,
+  title={Guiding diffusion models for antibody sequence and structure co-design with developability properties},
+  author={Amelia Villegas-Morcillo and Jana M. Weber and Marcel J.T. Reinders},
+  journal={PRX Life},
+  volume={2},
+  number={3},
+  pages={033012},
+  year={2024}
+}
+
 @article{villegas2023guiding,
   title={Guiding diffusion models for antibody sequence and structure co-design with developability properties},
   author={Amelia Villegas-Morcillo and Jana M. Weber and Marcel J.T. Reinders},
